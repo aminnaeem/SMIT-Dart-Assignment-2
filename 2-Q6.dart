@@ -28,7 +28,16 @@ void main(){
     },
   };
   
-  
-  print(World['Pakistan']);
+  String CountryKey = 'Australia';
+  if(World.containsKey(CountryKey)){
+    Map CountryData = World[CountryKey];
+    print('Country : ${CountryKey}');
+    print('Capital City : ${CountryData['Capital City']}');
+    print('Currency : ${CountryData['Currency']}');
+    print('Language : ${CountryData['Language']}');
+  }
+  else{
+    print('Country not found');
+  }
   
 }

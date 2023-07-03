@@ -9,6 +9,7 @@ void main() {
       NewList.add(elements);
     }
   }
+  print(NamesList);
   print(NewList);
   
 }
